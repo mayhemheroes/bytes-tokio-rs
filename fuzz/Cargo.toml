@@ -11,7 +11,7 @@ cargo-fuzz = true
 [dependencies]
 libfuzzer-sys = "0.4"
 
-[dependencies.REPLACE_WITH_NAME_OF_PACKAGE]
+[dependencies.bytes]
 # DELETE ME: Ensure path is a path relative to this Cargo.toml pointing to
 # DELETE ME: the pacakge you want to import from the repo.
 path = ".."
