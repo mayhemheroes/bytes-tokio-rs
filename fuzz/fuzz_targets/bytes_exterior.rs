@@ -9,5 +9,5 @@ fuzz_target!(|input: &[u16]| {
 
     let mut buf = BytesMut::with_capacity(1024);
     buf.put(&b"hello world"[..]);
-    buf.put_u16(u16);
+    buf.put_u16(input);
 });
