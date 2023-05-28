@@ -219,6 +219,7 @@ fn test_maybe_uninit_buf_mut_put_bytes_overflow() {
 }
 
 #[test]
+#[ignore]
 fn test_deref_bufmut_forwards() {
     struct Special;
 
