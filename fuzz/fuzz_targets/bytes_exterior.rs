@@ -4,21 +4,25 @@ use libfuzzer_sys::fuzz_target;
 
 use bytes::{BytesMut, BufMut};
 
-const N: usize = 5;
+// const N: usize = 10;
 
-fuzz_target!(|data: (u16, usize)| {
+fuzz_target!(|data: (u16, usize, usize)| {
 
-    let (input, capacity) = data;
+    let (input, capacity, size) = data;
     let mut buf = BytesMut::with_capacity(capacity);
 
-    buf.put(&b"hello world"[..]);
+    // buf.put(&b"hello world"[..]);
 
-    for i in 0..N - 1 {
-
-        buf.put_u16(input);
+    if size == 0 || size > 100000 {
+        return
     }
 
-    let a = buf.split();
+    for i in 0..size- 1 {
+
+        buf.put_u16(input);
+
+    }
+
 
 
 });
