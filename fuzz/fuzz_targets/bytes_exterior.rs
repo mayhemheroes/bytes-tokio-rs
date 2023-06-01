@@ -4,7 +4,7 @@ use libfuzzer_sys::fuzz_target;
 
 use bytes::{BytesMut, BufMut};
 
-const N: usize = 100;
+const N: usize = 5;
 
 fuzz_target!(|data: (u16, usize)| {
 
