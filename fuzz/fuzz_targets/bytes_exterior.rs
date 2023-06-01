@@ -4,7 +4,7 @@ use libfuzzer_sys::fuzz_target;
 
 use bytes::{BytesMut, BufMut};
 
-const N: usize = 10;
+const N: usize = 100;
 
 fuzz_target!(|data: (u16, usize)| {
 
@@ -19,9 +19,6 @@ fuzz_target!(|data: (u16, usize)| {
     }
 
     let a = buf.split();
-    // assert_eq!(a, b"hello world\x04\xD2"[..]);
-
-
 
 
 });
