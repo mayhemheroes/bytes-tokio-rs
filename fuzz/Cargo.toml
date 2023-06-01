@@ -25,3 +25,9 @@ name = "bytes_exterior"
 path = "fuzz_targets/bytes_exterior.rs"
 test = false
 doc = false
+
+[[bin]]
+name = "bytes_mut"
+path = "fuzz_targets/bytes_mut.rs"
+test = false
+doc = false
