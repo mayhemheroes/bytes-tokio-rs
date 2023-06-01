@@ -6,7 +6,7 @@ use bytes::{BytesMut, BufMut};
 
 const N: usize = 10;
 
-fuzz_target!(|data: (u16, i32)| {
+fuzz_target!(|data: (u16, usize)| {
 
     let (input, capacity) = data;
     let mut buf = BytesMut::with_capacity(capacity);
