@@ -1,0 +1,6 @@
+project: bytes
+target: bytes_exterior
+duration: 300
+
+cmds:
+  - cmd: /bytes_exterior
